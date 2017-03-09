@@ -28,6 +28,19 @@ Modules
 
 - Notificaciones
 
+Table of modules
+
+Name | Module  | Package 
+------------ | ------------- | ------------- 
+App | module-app | com.emedinaa.meetup
+User | module-user | com.emedinaa.meetup.user
+Meetups | module-group | com.emedinaa.meetup.group
+Messages | module-messages | com.emedinaa.meetup.messages
+Notifications | module-notification | com.emedinaa.meetup.notification
+Core | module-commons | com.emedinaa.meetup.commons
+Core | module-domain | com.emedinaa.meetup.domain
+Core | module-data | com.emedinaa.meetup.data
+
   
 ## References 
 
