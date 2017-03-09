@@ -6,7 +6,7 @@ How build modular applications in Android
 
 - Modules in Android
 
-- Navigation
+- Intent & Navigation
 
 - Dependencies
 
