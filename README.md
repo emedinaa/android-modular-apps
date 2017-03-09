@@ -32,3 +32,7 @@ Modules
 ## References 
 
 - Meetup API [https://www.meetup.com/es-ES/meetup_api/](https://www.meetup.com/es-ES/meetup_api/)
+
+- Clean Architecture [https://github.com/emedinaa/android-clean-architecture](https://github.com/emedinaa/android-clean-architecture)
+
+- Android MVP [https://github.com/emedinaa/android-mvp](https://github.com/emedinaa/android-mvp)
