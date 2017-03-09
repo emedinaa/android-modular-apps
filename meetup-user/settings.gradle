@@ -1,0 +1,9 @@
+include ':app', ':module-user'
+
+include ':domain'
+include ':data'
+include ':commons'
+
+project(':domain').projectDir = new File(settingsDir, '../meetup-core/domain')
+project(':data').projectDir = new File(settingsDir, '../meetup-core/data')
+project(':commons').projectDir = new File(settingsDir, '../meetup-core/commons')

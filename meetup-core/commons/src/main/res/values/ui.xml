@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="meetup.ui.module.user.login">com.emedinaa.meetup.user.LogInActivity</string>
+    <string name="meetup.ui.module.group.main">com.emedinaa.meetup.group.GroupMainActivity</string>
+</resources>
