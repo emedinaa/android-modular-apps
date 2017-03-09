@@ -12,7 +12,7 @@ How build modular applications in Android
 
 - Gradle & Flavors
 
-- Layers
+- Layers & Clean Architecture
 
 ## Sample 
 
