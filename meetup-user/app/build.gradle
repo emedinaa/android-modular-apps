@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.emedinaa.meetup"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -30,4 +30,5 @@ dependencies {
     compile project(':domain')
     compile project(':data')
     compile project(':commons')
+    compile project(':module-user')
 }
