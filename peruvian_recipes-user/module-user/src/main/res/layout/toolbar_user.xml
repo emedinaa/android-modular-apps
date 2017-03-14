@@ -16,7 +16,7 @@
             android:layout_height="40dp"
             android:padding="4dp"
             android:layout_alignParentLeft="true"
-            android:src="@mipmap/ic_back"
+            android:src="@mipmap/ic_back_white"
             android:id="@+id/iviBack"/>
 
     </RelativeLayout>

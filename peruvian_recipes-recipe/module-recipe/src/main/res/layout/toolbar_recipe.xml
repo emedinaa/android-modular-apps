@@ -17,7 +17,7 @@
             android:padding="4dp"
             android:layout_alignParentLeft="true"
             android:visibility="gone"
-            android:src="@mipmap/ic_back"
+            android:src="@mipmap/ic_back_white"
             android:id="@+id/iviBack"/>
 
         <ImageView
@@ -26,7 +26,7 @@
             android:padding="4dp"
             android:layout_marginRight="4dp"
             android:layout_alignParentRight="true"
-            android:src="@mipmap/ic_profile"
+            android:src="@mipmap/ic_profile_white"
             android:id="@+id/iviProfile"/>
     </RelativeLayout>
 </android.support.v7.widget.Toolbar>
