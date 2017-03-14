@@ -22,29 +22,28 @@ Modules
 
 - User 
 
-- Meetups
+- Recipes
 
-- Messages
+- Chat
 
-- Notificaciones
+- Search & Filters
 
 Table of modules
 
 Name | Module  | Package 
 ------------ | ------------- | ------------- 
-App | module-app | com.emedinaa.meetup
-User | module-user | com.emedinaa.meetup.user
-Meetups | module-group | com.emedinaa.meetup.group
-Messages | module-messages | com.emedinaa.meetup.messages
-Notifications | module-notification | com.emedinaa.meetup.notification
-Core | module-commons | com.emedinaa.meetup.commons
-Core | module-domain | com.emedinaa.meetup.domain
-Core | module-data | com.emedinaa.meetup.data
+App | module-app | com.emedinaa.peruvian_recipes
+User | module-user | com.emedinaa.peruvian_recipes.user
+Recipes | module-recipe | com.emedinaa.peruvian_recipes.recipe
+Chat | module-chat | com.emedinaa.peruvian_recipes.chat
+Core | module-common | com.emedinaa.peruvian_recipes.common
+Core | module-domain | com.emedinaa.peruvian_recipes.domain
+Core | module-data | com.emedinaa.peruvian_recipes.data
 
   
 ## References 
 
-- Meetup API [https://www.meetup.com/es-ES/meetup_api/](https://www.meetup.com/es-ES/meetup_api/)
+- BackendLess Rest API [https://backendless.com/documentation/users/rest/](https://backendless.com/documentation/users/rest/)
 
 - Clean Architecture [https://github.com/emedinaa/android-clean-architecture](https://github.com/emedinaa/android-clean-architecture)
 
