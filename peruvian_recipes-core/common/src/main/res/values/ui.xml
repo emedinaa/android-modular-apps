@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="ui.module.user.login">com.emedinaa.peruvian_recipes.user.ui.LogInActivity</string>
+    <string name="ui.module.user.sigin">com.emedinaa.peruvian_recipes.user.ui.SigInActivity</string>
+    <string name="ui.module.user.profile">com.emedinaa.peruvian_recipes.user.ui.ProfileActivity</string>
     <string name="ui.module.recipes.main">com.emedinaa.peruvian_recipes.recipe.ui.DashboardRecipesActivity</string>
+    <string name="ui.module.recipes.detail">com.emedinaa.peruvian_recipes.recipe.ui.RecipeDetailActivity</string>
 </resources>

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
     <color name="red">#DF0039</color>
     <color name="red_favorite">#ED6073</color>
     <color name="green">#8AAD01</color>
     <color name="orange">#FD9833</color>
     <color name="grey_background">#F8F7F3</color>
     <color name="grey_header">#E7E5E1</color>
+    <color name="black30">#1AFFFFFF</color>
 </resources>

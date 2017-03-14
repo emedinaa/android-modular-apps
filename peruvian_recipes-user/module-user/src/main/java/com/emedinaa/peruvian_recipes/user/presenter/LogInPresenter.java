@@ -1,6 +1,8 @@
 package com.emedinaa.peruvian_recipes.user.presenter;
 
+import com.emedinaa.peruvian_recipes.data.storage.UserSessionLocalInteractor;
 import com.emedinaa.peruvian_recipes.domain.callback.StorageCallback;
+import com.emedinaa.peruvian_recipes.domain.entity.User;
 import com.emedinaa.peruvian_recipes.domain.interactors.LogInInteractor;
 import com.emedinaa.peruvian_recipes.user.view.LogInContract;
 
@@ -11,13 +13,29 @@ import com.emedinaa.peruvian_recipes.user.view.LogInContract;
 public class LogInPresenter {
     private  final LogInContract.View logInView;
     private final LogInInteractor logInInteractor;
+    private final UserSessionLocalInteractor userSessionLocalInteractor;
 
-    public LogInPresenter(LogInContract.View logInView, LogInInteractor logInInteractor) {
+    public LogInPresenter(LogInContract.View logInView, LogInInteractor logInInteractor, UserSessionLocalInteractor userSessionLocalInteractor) {
         this.logInView = logInView;
         this.logInInteractor = logInInteractor;
+        this.userSessionLocalInteractor = userSessionLocalInteractor;
     }
 
     private StorageCallback storageCallback= new StorageCallback() {
+        @Override
+        public void onSuccess(Object object) {
+            logInView.hideLoading();
+            User user=(User)(object);
+            saveSession(user);
+        }
+
+        @Override
+        public void onFailure(Exception e) {
+            logInView.hideLoading();
+        }
+    };
+
+    private StorageCallback sessionStorageCallback= new StorageCallback() {
         @Override
         public void onSuccess(Object object) {
             logInView.hideLoading();
@@ -29,8 +47,14 @@ public class LogInPresenter {
             logInView.hideLoading();
         }
     };
+
+
     public void logIn(String email, String password){
         logInView.showLoading();
         logInInteractor.logIn(email,password,storageCallback);
+    }
+
+    private void saveSession(User user){
+        userSessionLocalInteractor.saveSession(user,sessionStorageCallback);
     }
 }

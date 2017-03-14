@@ -28,4 +28,13 @@ dependencies {
     })
     compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     testCompile 'junit:junit:4.12'
+
+    //External libraries
+    //PICASSO
+    //http://square.github.io/picasso/
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    //GLIDE
+    //https://github.com/bumptech/glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
 }

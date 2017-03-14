@@ -8,7 +8,8 @@
         android:layout_height="160dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/cuychactado"/>
+        android:src="@drawable/cuychactado"
+        android:id="@+id/iviPhoto"/>
     <TextView
         android:text="TextView"
         android:layout_width="match_parent"

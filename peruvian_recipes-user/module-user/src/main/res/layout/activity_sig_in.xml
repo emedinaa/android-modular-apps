@@ -1,10 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_sig_in"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.emedinaa.peruvian_recipes.user.ui.SigInActivity">
+
+    <include layout="@layout/toolbar_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:textSize="17sp"
+                    android:inputType="textPersonName"
+                    android:id="@+id/eteUsername"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:textSize="17sp"
+                    android:id="@+id/eteEmail"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="17sp"
+                    android:id="@+id/etePassword"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange"
+                android:text="Registrarse"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:id="@+id/btnLogIn"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
     <ProgressBar
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"

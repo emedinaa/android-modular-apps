@@ -5,15 +5,15 @@ package com.emedinaa.peruvian_recipes.data.entity;
  */
 public class UserEntity {
 
-    private int id;
+    private String id;
     private String name;
     private String email;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -36,7 +36,7 @@ public class UserEntity {
     @Override
     public String toString() {
         return "UserEntity{" +
-                "id=" + id +
+                "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 '}';

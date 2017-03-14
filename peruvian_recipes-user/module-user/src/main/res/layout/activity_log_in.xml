@@ -58,6 +58,15 @@
             android:textColor="@android:color/white"
             android:padding="10dp"
             android:id="@+id/btnLogIn"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:text="Sig In"
+            android:id="@+id/tviSigIn"/>
 
     </LinearLayout>
 

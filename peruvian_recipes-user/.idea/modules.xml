@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/../peruvian_recipes-core/common/common.iml" filepath="$PROJECT_DIR$/../peruvian_recipes-core/common/common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../peruvian_recipes-core/commons/commons.iml" filepath="$PROJECT_DIR$/../peruvian_recipes-core/commons/commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/../peruvian_recipes-core/data/data.iml" filepath="$PROJECT_DIR$/../peruvian_recipes-core/data/data.iml" />
       <module fileurl="file://$PROJECT_DIR$/../peruvian_recipes-core/domain/domain.iml" filepath="$PROJECT_DIR$/../peruvian_recipes-core/domain/domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/module-user/module-user.iml" filepath="$PROJECT_DIR$/module-user/module-user.iml" />

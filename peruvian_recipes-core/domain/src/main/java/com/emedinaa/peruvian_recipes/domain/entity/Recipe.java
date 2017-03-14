@@ -1,10 +1,12 @@
 package com.emedinaa.peruvian_recipes.domain.entity;
 
+import java.io.Serializable;
+
 /**
  * Created by emedinaa on 14/03/17.
  */
 
-public class Recipe {
+public class Recipe implements Serializable {
 
     private String image;
     private String description;

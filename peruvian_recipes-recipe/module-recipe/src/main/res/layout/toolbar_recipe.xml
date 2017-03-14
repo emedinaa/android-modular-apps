@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:elevation="4dp"
+    android:background="@color/black30"
+    android:theme="@style/CustomToolbar" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            android:src="@mipmap/ic_back"
+            android:id="@+id/iviBack"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_profile"
+            android:id="@+id/iviProfile"/>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

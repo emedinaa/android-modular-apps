@@ -2,9 +2,11 @@ package com.emedinaa.peruvian_recipes.data.rest;
 
 import android.util.Log;
 
+import com.emedinaa.peruvian_recipes.data.entity.UserEntity;
 import com.emedinaa.peruvian_recipes.data.rest.entity.LogInRaw;
 import com.emedinaa.peruvian_recipes.data.rest.entity.LogInResponse;
 import com.emedinaa.peruvian_recipes.domain.callback.StorageCallback;
+import com.emedinaa.peruvian_recipes.domain.entity.User;
 import com.emedinaa.peruvian_recipes.domain.interactors.LogInInteractor;
 
 import retrofit2.Call;
@@ -30,7 +32,15 @@ public class LogInRestInteractor implements LogInInteractor {
             @Override
             public void onResponse(Call<LogInResponse> call, Response<LogInResponse> response) {
                 if(response.isSuccessful()){
-                    storageCallback.onSuccess(response.body());
+                    LogInResponse logInResponse= response.body();
+
+                    //mapper
+                    User user= new User();
+                    user.setId(logInResponse.getObjectId());
+                    user.setName(logInResponse.getName());
+                    user.setEmail(logInResponse.getEmail());
+
+                    storageCallback.onSuccess(user);
                 }else {
                     storageCallback.onFailure(new Exception(ERROR_MESSAGE));
                 }
