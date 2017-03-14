@@ -1,0 +1,4 @@
+include ':app', ':module-dashboard'
+include ':common'
+
+project(':common').projectDir = new File(settingsDir, '../peruvian_recipes-core/common')

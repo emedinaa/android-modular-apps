@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../peruvian_recipes-core/common/common.iml" filepath="$PROJECT_DIR$/../peruvian_recipes-core/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../peruvian_recipes-core/data/data.iml" filepath="$PROJECT_DIR$/../peruvian_recipes-core/data/data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../peruvian_recipes-core/domain/domain.iml" filepath="$PROJECT_DIR$/../peruvian_recipes-core/domain/domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-recipe/module-recipe.iml" filepath="$PROJECT_DIR$/module-recipe/module-recipe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peruvian_recipes-recipe.iml" filepath="$PROJECT_DIR$/peruvian_recipes-recipe.iml" />
+    </modules>
+  </component>
+</project>

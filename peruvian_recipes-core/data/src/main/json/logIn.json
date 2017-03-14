@@ -1,0 +1,13 @@
+{
+  "lastLogin": 1489466342760,
+  "created": 1489446333000,
+  "name": "admin",
+  "___class": "Users",
+  "photo": null,
+  "user-token": "91D454B7-3E66-EB44-FF5F-5E8EAB853700",
+  "ownerId": "6026A6AF-63EC-B72F-FFCE-E27DEFCF9400",
+  "updated": null,
+  "objectId": "6026A6AF-63EC-B72F-FFCE-E27DEFCF9400",
+  "email": "admin@gmail.com",
+  "__meta": "{\"relationRemovalIds\":{},\"selectedProperties\":[\"__updated__meta\",\"password\",\"created\",\"name\",\"___class\",\"photo\",\"ownerId\",\"updated\",\"objectId\",\"email\"],\"relatedObjects\":{}}"
+}

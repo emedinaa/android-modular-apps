@@ -1,0 +1,15 @@
+include ':app'
+
+include ':domain'
+include ':data'
+include ':common'
+include ':module-user'
+include ':module-recipe'
+
+project(':domain').projectDir = new File(settingsDir, '../peruvian_recipes-core/domain')
+project(':data').projectDir = new File(settingsDir, '../peruvian_recipes-core/data')
+project(':common').projectDir = new File(settingsDir, '../peruvian_recipes-core/common')
+
+
+project(':module-user').projectDir = new File(settingsDir, '../peruvian_recipes-user/module-user')
+project(':module-recipe').projectDir = new File(settingsDir, '../peruvian_recipes-recipe/module-recipe')
