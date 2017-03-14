@@ -49,4 +49,10 @@ public class UserSessionLocalInteractor implements UserSessionInteractor {
             storageCallback.onSuccess(null);
         }
     }
+
+    @Override
+    public void closeSession(StorageCallback storageCallback) {
+        sharedPreferencesHelper.clear();
+        storageCallback.onSuccess(null);
+    }
 }

@@ -56,13 +56,13 @@ public class MainActivity extends AppCompatActivity implements UserSessionContra
     @Override
     public void gotoLogIn() {
         Navigation.getInstance().startActivity(this,
-                new Bundle(), getString(R.string.ui_module_user_login),false);
+                new Bundle(), getString(R.string.ui_module_user_login),true);
     }
 
     @Override
     public void gotoMain() {
         Navigation.getInstance().startActivity(this,
-                new Bundle(), getString(R.string.ui_module_recipes_main),false);
+                new Bundle(), getString(R.string.ui_module_recipes_main),true);
     }
 
 

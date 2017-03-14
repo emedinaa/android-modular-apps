@@ -37,4 +37,23 @@ public class Navigation {
         }
     }
 
+
+    public void startActivityAndReset(Context context,Bundle bundle, String activity, boolean destroy){
+        try {
+            Intent intent = new Intent();
+            intent.putExtras(bundle);
+            intent.setClassName(context,activity);
+            intent.addFlags(
+                    Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                            Intent.FLAG_ACTIVITY_CLEAR_TASK |
+                            Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+            Activity mActivity= (Activity)(context);
+            if(destroy) mActivity.finish();
+
+        } catch ( ActivityNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

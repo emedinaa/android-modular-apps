@@ -11,4 +11,5 @@ public interface UserSessionInteractor {
 
     void validateCurrentSession(final StorageCallback storageCallback);
     void saveSession(User user, final StorageCallback storageCallback);
+    void closeSession(final StorageCallback storageCallback);
 }

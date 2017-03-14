@@ -62,5 +62,12 @@
                 android:id="@+id/eteAboutMe"/>
         </android.support.design.widget.TextInputLayout>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:textColor="@android:color/white"
+            android:text="LogOut"
+            android:id="@+id/btnLogOut"/>
     </LinearLayout>
 </RelativeLayout>

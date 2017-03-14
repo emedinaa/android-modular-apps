@@ -4,6 +4,7 @@ import com.emedinaa.peruvian_recipes.data.storage.UserSessionLocalInteractor;
 import com.emedinaa.peruvian_recipes.domain.callback.StorageCallback;
 import com.emedinaa.peruvian_recipes.domain.entity.User;
 import com.emedinaa.peruvian_recipes.domain.interactors.LogInInteractor;
+import com.emedinaa.peruvian_recipes.domain.interactors.UserSessionInteractor;
 import com.emedinaa.peruvian_recipes.user.view.LogInContract;
 
 /**
@@ -13,12 +14,12 @@ import com.emedinaa.peruvian_recipes.user.view.LogInContract;
 public class LogInPresenter {
     private  final LogInContract.View logInView;
     private final LogInInteractor logInInteractor;
-    private final UserSessionLocalInteractor userSessionLocalInteractor;
+    private final UserSessionInteractor userSessionInteractor;
 
-    public LogInPresenter(LogInContract.View logInView, LogInInteractor logInInteractor, UserSessionLocalInteractor userSessionLocalInteractor) {
+    public LogInPresenter(LogInContract.View logInView, LogInInteractor logInInteractor, UserSessionInteractor userSessionInteractor) {
         this.logInView = logInView;
         this.logInInteractor = logInInteractor;
-        this.userSessionLocalInteractor = userSessionLocalInteractor;
+        this.userSessionInteractor = userSessionInteractor;
     }
 
     private StorageCallback storageCallback= new StorageCallback() {
@@ -55,6 +56,6 @@ public class LogInPresenter {
     }
 
     private void saveSession(User user){
-        userSessionLocalInteractor.saveSession(user,sessionStorageCallback);
+        userSessionInteractor.saveSession(user,sessionStorageCallback);
     }
 }
