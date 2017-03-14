@@ -32,7 +32,7 @@ Table of modules
 
 Name | Module  | Package 
 ------------ | ------------- | ------------- 
-App | peruvian_recipes-app | com.emedinaa.peruvian_recipes
+App | module-app | com.emedinaa.peruvian_recipes
 User | module-user | com.emedinaa.peruvian_recipes.user
 Recipes | module-recipe | com.emedinaa.peruvian_recipes.recipe
 Chat | module-chat | com.emedinaa.peruvian_recipes.chat
