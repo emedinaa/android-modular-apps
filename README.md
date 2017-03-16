@@ -16,7 +16,7 @@ How build modular applications in Android
 
 ## Sample 
 
-Meetup Android Client
+Peruvian Recipes
 
 Modules
 
@@ -48,3 +48,8 @@ Core | module-data | com.emedinaa.peruvian_recipes.data
 - Clean Architecture [https://github.com/emedinaa/android-clean-architecture](https://github.com/emedinaa/android-clean-architecture)
 
 - Android MVP [https://github.com/emedinaa/android-mvp](https://github.com/emedinaa/android-mvp)
+
+
+## Slide
+- Android Modular Apps [https://docs.google.com/presentation/d/1o0GZAD-ArmSu82W5uimTwEAQlH8woQvhHJ4zPLb0cPQ/edit?usp=sharing](https://docs.google.com/presentation/d/1o0GZAD-ArmSu82W5uimTwEAQlH8woQvhHJ4zPLb0cPQ/edit?usp=sharing)
+
