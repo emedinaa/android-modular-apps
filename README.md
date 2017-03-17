@@ -18,6 +18,10 @@ How build modular applications in Android
 
 Peruvian Recipes
 
+- username : admin@gmail.com
+
+- password: 123456
+
 Modules
 
 - User 
